@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="controller.ControllerProcessorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:18" hostname="Matthews-MacBook-Pro.local" time="0.069">
+  <properties/>
+  <testcase name="testProcessHeartbeatMinor()" classname="controller.ControllerProcessorTest" time="0.05"/>
+  <testcase name="testProcessHeartBeatMajor()" classname="controller.ControllerProcessorTest" time="0.015"/>
+  <testcase name="testConstructorAndGetter()" classname="controller.ControllerProcessorTest" time="0.0"/>
+  <testcase name="testProcessInvalidMessage()" classname="controller.ControllerProcessorTest" time="0.001"/>
+  <system-out><![CDATA[INFO	controller.ControllerProcessor  	[Test worker]	Processing HEARTBEAT_MINOR Message from shark
+INFO	controller.ControllerProcessor  	[Test worker]	Processing HEARTBEAT_MAJOR Message from shark
+INFO	controller.Controller           	[Test worker]	Added Chunk Server metadata: ChunkServerMetadata:
+  hostname: shark
+  freeSpaceAvailable: 0
+  totalChunksMaintained: 0
+  chunkMetadata: [
+Chunk Metadata:
+	Version: 1
+	Sequence: 7
+	Timestamp: 2021-09-27 20:02:18.864622
+	Size: 0
+	File: /test_1_filepath
+Chunk Metadata:
+	Version: 1
+	Sequence: 4
+	Timestamp: 2021-09-27 20:02:18.864622
+	Size: 0
+	File: /test_2_filepath
+  ]
+
+INFO	controller.ControllerProcessor  	[Test worker]	Processing CHUNK_STORE_REQUEST Message from shark
+ERROR	controller.ControllerProcessor  	[Test worker]	Unimplemented Message type "CHUNK_STORE_REQUEST"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

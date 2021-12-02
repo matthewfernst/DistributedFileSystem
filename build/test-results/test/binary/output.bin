@@ -1,0 +1,155 @@
+bINFO	controller.ControllerProcessor  	[Test worker]	Processing HEARTBEAT_MINOR Message from shark
+bINFO	controller.ControllerProcessor  	[Test worker]	Processing HEARTBEAT_MAJOR Message from shark
+fINFO	controller.Controller           	[Test worker]	Added Chunk Server metadata: ChunkServerMetadata:
+  hostname: shark
+  freeSpaceAvailable: 0
+  totalChunksMaintained: 0
+  chunkMetadata: [
+Chunk Metadata:
+	Version: 1
+	Sequence: 7
+'	Timestamp: 2021-09-27 20:02:18.864622
+		Size: 0
+	File: /test_1_filepath
+Chunk Metadata:
+	Version: 1
+	Sequence: 4
+'	Timestamp: 2021-09-27 20:02:18.864622
+		Size: 0
+	File: /test_2_filepath
+  ]
+
+
+fINFO	controller.ControllerProcessor  	[Test worker]	Processing CHUNK_STORE_REQUEST Message from shark
+
+fERROR	controller.ControllerProcessor  	[Test worker]	Unimplemented Message type "CHUNK_STORE_REQUEST"
+ChunkServerMetadata:
+  hostname: shark
+  freeSpaceAvailable: 0
+  totalChunksMaintained: 1
+  chunkMetadata: [
+Chunk Metadata:
+	Version: 1
+	Sequence: 3
+'	Timestamp: 2021-09-27 20:02:18.886739
+	Size: 39000
+	File: /path/to/my/file.data
+  ]
+
+bWARN	chunkserver.Chunk               	[Test worker]	chunk variable not set. Using /tmp as default
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+ZINFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+…INFO	chunkserver.ChunkServerProcessor	[Test worker]	Chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3 does not already exist, saving it for the first time
+üINFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+ßINFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+{INFO	chunkserver.ChunkServerProcessor	[Test worker]	We are the last recipient of the ChunkStoreRequest, no need to forward
+~INFO	chunkserver.ChunkServerProcessor	[Test worker]	Sending ChunkStoreResponse SUCCESS back to localhost: ChunkStoreResponse:
+4  absoluteFilePath: /test_directory/test_file2.data
+  sequence: 3
+  success: true
+
+ÑWARN	networking.Processor            	[Test worker]	Socket is null or has been disconnected; aborting CHUNK_STORE_RESPONSE response
+®INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3"
+MINFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35279
+XINFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35279
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+ZINFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+XINFO	chunkserver.ChunkIntegrity      	[Test worker]	All checksums match; chunk is valid
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+ZINFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+∞INFO	chunkserver.ChunkServerProcessor	[Test worker]	Chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3 already exists, updating it
+WINFO	chunkserver.Chunk               	[Test worker]	Updating chunk version from 1 to 2
+üINFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+ßINFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+©INFO	chunkserver.Chunk               	[Test worker]	Successfully updated chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+{INFO	chunkserver.ChunkServerProcessor	[Test worker]	We are the last recipient of the ChunkStoreRequest, no need to forward
+~INFO	chunkserver.ChunkServerProcessor	[Test worker]	Sending ChunkStoreResponse SUCCESS back to localhost: ChunkStoreResponse:
+4  absoluteFilePath: /test_directory/test_file2.data
+  sequence: 3
+  success: true
+
+ÑWARN	networking.Processor            	[Test worker]	Socket is null or has been disconnected; aborting CHUNK_STORE_RESPONSE response
+®INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3"
+MINFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35279
+XINFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35279
+!~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+!~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+!~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+!~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+!~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+!ZINFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+!∞ERROR	chunkserver.ChunkIntegrity      	[Test worker]	Expected checksums[2] to be cc47732fa8be3ae8c43c3d71fd3223d1503d9bf8, got 9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8 instead
+"~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+"~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+"~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+"~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+"~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+"ZINFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+"XINFO	chunkserver.ChunkIntegrity      	[Test worker]	All checksums match; chunk is valid
+#~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+#~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+#~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+#~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+#~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+#ZINFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+$~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=080bc6fb404d10e4ab7e14d2b8234a3f716f15dd
+$~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+$~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+$~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+$~INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=a2f3ff846f27b65cc25d4a3f1376829980f9fe34
+$ZINFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+$∞ERROR	chunkserver.ChunkIntegrity      	[Test worker]	Expected checksums[0] to be ffabe7dd8cf71b40367392950340ca9c4e7d707c, got 080bc6fb404d10e4ab7e14d2b8234a3f716f15dd instead
+-,êINFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+-,òINFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+-,WINFO	chunkserver.Chunk               	[Test worker]	Updating chunk version from 1 to 2
+-,êINFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+-,òINFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+-,öINFO	chunkserver.Chunk               	[Test worker]	Successfully updated chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+-,ôINFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0"
+-,MINFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35264
+-,XINFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35264
+-/êINFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+-/òINFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+-/ôINFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0"
+-/MINFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35264
+-/XINFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35264
+POöINFO	client.FileSaver                	[Test worker]	Opening file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data" for writing...
+POöINFO	client.FileSaver                	[Test worker]	Wrote 23-byte chunk to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+POöINFO	client.FileSaver                	[Test worker]	Wrote 24-byte chunk to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+POóINFO	client.FileSaver                	[Test worker]	Finished writing to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+PQïINFO	client.FileSaver                	[Test worker]	Opening file "/Users/matthewernst/distribufile/src/test/resources/test_directory" for writing...
+PRöINFO	client.FileSaver                	[Test worker]	Opening file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data" for writing...
+PRöINFO	client.FileSaver                	[Test worker]	Wrote 21-byte chunk to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+PRóINFO	client.FileSaver                	[Test worker]	Finished writing to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TUSINFO	client.FileLoader               	[Test worker]	Read chunk of size 40000 bytes
+TU†INFO	client.FileLoader               	[Test worker]	Finished reading final chunk of file "/Users/matthewernst/distribufile/src/test/resources/input_680kb.data"
+TWûINFO	client.FileLoader               	[Test worker]	Finished reading final chunk of file "/Users/matthewernst/distribufile/src/test/resources/input_0kb.data"
+TXSINFO	client.FileLoader               	[Test worker]	Read chunk of size 35000 bytes
+TXüINFO	client.FileLoader               	[Test worker]	Finished reading final chunk of file "/Users/matthewernst/distribufile/src/test/resources/input_35kb.data"
+TYSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TYüINFO	client.FileLoader               	[Test worker]	Finished reading final chunk of file "/Users/matthewernst/distribufile/src/test/resources/input_64kb.data"
+TZSINFO	client.FileLoader               	[Test worker]	Read chunk of size 64000 bytes
+TZSINFO	client.FileLoader               	[Test worker]	Read chunk of size 36000 bytes
+TZ†INFO	client.FileLoader               	[Test worker]	Finished reading final chunk of file "/Users/matthewernst/distribufile/src/test/resources/input_100kb.data"

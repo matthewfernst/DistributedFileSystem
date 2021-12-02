@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chunkserver.ChunkTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:18" hostname="Matthews-MacBook-Pro.local" time="0.037">
+  <properties/>
+  <testcase name="testUpdateChunk()" classname="chunkserver.ChunkTest" time="0.01"/>
+  <testcase name="testMakeParentDirsIfNotExist()" classname="chunkserver.ChunkTest" time="0.02"/>
+  <testcase name="testLoadSavedChunk()" classname="chunkserver.ChunkTest" time="0.005"/>
+  <system-out><![CDATA[INFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+INFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+INFO	chunkserver.Chunk               	[Test worker]	Updating chunk version from 1 to 2
+INFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+INFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+INFO	chunkserver.Chunk               	[Test worker]	Successfully updated chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0"
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35264
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35264
+INFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+INFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0
+INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/input_35kb.data_chunk0"
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35264
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35264
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

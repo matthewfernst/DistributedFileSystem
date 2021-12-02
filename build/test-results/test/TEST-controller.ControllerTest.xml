@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="controller.ControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:18" hostname="Matthews-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="testSelectBestChunkServersForReplicas()" classname="controller.ControllerTest" time="0.002"/>
+  <testcase name="testReplaceChunkServerMetadataExistingCSM()" classname="controller.ControllerTest" time="0.002"/>
+  <testcase name="testUpdateChunkServerMetadataExistingCSM()" classname="controller.ControllerTest" time="0.0"/>
+  <testcase name="testUpdateChunkServerMetadataNewCSM()" classname="controller.ControllerTest" time="0.0"/>
+  <system-out><![CDATA[ChunkServerMetadata:
+  hostname: shark
+  freeSpaceAvailable: 0
+  totalChunksMaintained: 1
+  chunkMetadata: [
+Chunk Metadata:
+	Version: 1
+	Sequence: 3
+	Timestamp: 2021-09-27 20:02:18.886739
+	Size: 39000
+	File: /path/to/my/file.data
+  ]
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

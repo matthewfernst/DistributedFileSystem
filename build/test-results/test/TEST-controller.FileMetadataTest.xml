@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="controller.FileMetadataTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:18" hostname="Matthews-MacBook-Pro.local" time="0.013">
+  <properties/>
+  <testcase name="testPutAlreadyExists()" classname="controller.FileMetadataTest" time="0.001"/>
+  <testcase name="testPutInMiddle()" classname="controller.FileMetadataTest" time="0.001"/>
+  <testcase name="testFileArgsConstructor()" classname="controller.FileMetadataTest" time="0.001"/>
+  <testcase name="testEquals()" classname="controller.FileMetadataTest" time="0.001"/>
+  <testcase name="testPutBeyondEnd()" classname="controller.FileMetadataTest" time="0.002"/>
+  <testcase name="testFullArgsConstructor()" classname="controller.FileMetadataTest" time="0.001"/>
+  <testcase name="testFillChunkGaps()" classname="controller.FileMetadataTest" time="0.002"/>
+  <testcase name="testPutSizeEqualsSequence()" classname="controller.FileMetadataTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

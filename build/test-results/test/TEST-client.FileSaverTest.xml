@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="client.FileSaverTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:19" hostname="Matthews-MacBook-Pro.local" time="0.016">
+  <properties/>
+  <testcase name="testMultipleWritesSimple()" classname="client.FileSaverTest" time="0.009"/>
+  <testcase name="testConstructorFileIsADirectory()" classname="client.FileSaverTest" time="0.003"/>
+  <testcase name="testWriteSimple()" classname="client.FileSaverTest" time="0.003"/>
+  <system-out><![CDATA[INFO	client.FileSaver                	[Test worker]	Opening file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data" for writing...
+INFO	client.FileSaver                	[Test worker]	Wrote 23-byte chunk to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+INFO	client.FileSaver                	[Test worker]	Wrote 24-byte chunk to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+INFO	client.FileSaver                	[Test worker]	Finished writing to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+INFO	client.FileSaver                	[Test worker]	Opening file "/Users/matthewernst/distribufile/src/test/resources/test_directory" for writing...
+INFO	client.FileSaver                	[Test worker]	Opening file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data" for writing...
+INFO	client.FileSaver                	[Test worker]	Wrote 21-byte chunk to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+INFO	client.FileSaver                	[Test worker]	Finished writing to file "/Users/matthewernst/distribufile/src/test/resources/filesaver_test.data"
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

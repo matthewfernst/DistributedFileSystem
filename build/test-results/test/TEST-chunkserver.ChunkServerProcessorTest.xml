@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chunkserver.ChunkServerProcessorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:18" hostname="Matthews-MacBook-Pro.local" time="0.031">
+  <properties/>
+  <testcase name="testProcessChunkStoreRequestSavesFile()" classname="chunkserver.ChunkServerProcessorTest" time="0.031"/>
+  <system-out><![CDATA[WARN	chunkserver.Chunk               	[Test worker]	chunk variable not set. Using /tmp as default
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3 does not already exist, saving it for the first time
+INFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	We are the last recipient of the ChunkStoreRequest, no need to forward
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Sending ChunkStoreResponse SUCCESS back to localhost: ChunkStoreResponse:
+  absoluteFilePath: /test_directory/test_file2.data
+  sequence: 3
+  success: true
+
+WARN	networking.Processor            	[Test worker]	Socket is null or has been disconnected; aborting CHUNK_STORE_RESPONSE response
+INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3"
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35279
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35279
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	All checksums match; chunk is valid
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3 already exists, updating it
+INFO	chunkserver.Chunk               	[Test worker]	Updating chunk version from 1 to 2
+INFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.Chunk               	[Test worker]	Successfully updated chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	We are the last recipient of the ChunkStoreRequest, no need to forward
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Sending ChunkStoreResponse SUCCESS back to localhost: ChunkStoreResponse:
+  absoluteFilePath: /test_directory/test_file2.data
+  sequence: 3
+  success: true
+
+WARN	networking.Processor            	[Test worker]	Socket is null or has been disconnected; aborting CHUNK_STORE_RESPONSE response
+INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file "/Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3"
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35279
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35279
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

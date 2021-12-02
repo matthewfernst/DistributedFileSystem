@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chunkserver.ChunkIntegrityTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:18" hostname="Matthews-MacBook-Pro.local" time="0.023">
+  <properties/>
+  <testcase name="testCalculateSHA1Empty()" classname="chunkserver.ChunkIntegrityTest" time="0.001"/>
+  <testcase name="testStringToHexToString()" classname="chunkserver.ChunkIntegrityTest" time="0.001"/>
+  <testcase name="testIsValidChunkChangedReadChecksums()" classname="chunkserver.ChunkIntegrityTest" time="0.005"/>
+  <testcase name="testIsValidChunkUnchangedData()" classname="chunkserver.ChunkIntegrityTest" time="0.005"/>
+  <testcase name="testCalculateSliceChecksums()" classname="chunkserver.ChunkIntegrityTest" time="0.003"/>
+  <testcase name="testIsValidChunkChangedData()" classname="chunkserver.ChunkIntegrityTest" time="0.003"/>
+  <testcase name="testCalculateSHA1TestString()" classname="chunkserver.ChunkIntegrityTest" time="0.001"/>
+  <system-out><![CDATA[INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+ERROR	chunkserver.ChunkIntegrity      	[Test worker]	Expected checksums[2] to be cc47732fa8be3ae8c43c3d71fd3223d1503d9bf8, got 9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8 instead
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	All checksums match; chunk is valid
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=080bc6fb404d10e4ab7e14d2b8234a3f716f15dd
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=a2f3ff846f27b65cc25d4a3f1376829980f9fe34
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+ERROR	chunkserver.ChunkIntegrity      	[Test worker]	Expected checksums[0] to be ffabe7dd8cf71b40367392950340ca9c4e7d707c, got 080bc6fb404d10e4ab7e14d2b8234a3f716f15dd instead
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

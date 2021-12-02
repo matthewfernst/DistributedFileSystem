@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="messaging.MessageTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-09-28T02:02:19" hostname="Matthews-MacBook-Pro.local" time="0.015">
+  <properties/>
+  <testcase name="testIntegerFromTypeValid()" classname="messaging.MessageTest" time="0.001"/>
+  <testcase name="testReadStringArrayEmpty()" classname="messaging.MessageTest" time="0.002"/>
+  <testcase name="testTypeFromIntegerValid()" classname="messaging.MessageTest" time="0.0"/>
+  <testcase name="testWriteAndReadChunkMetadataList()" classname="messaging.MessageTest" time="0.0"/>
+  <testcase name="testWriteAndReadStringList()" classname="messaging.MessageTest" time="0.0"/>
+  <testcase name="testTypeFromIntegerInvalid()" classname="messaging.MessageTest" time="0.0"/>
+  <testcase name="testWriteStringByteLength()" classname="messaging.MessageTest" time="0.001"/>
+  <testcase name="testReadStringNonempty()" classname="messaging.MessageTest" time="0.001"/>
+  <testcase name="testReadStringArrayNonempty()" classname="messaging.MessageTest" time="0.0"/>
+  <testcase name="testWriteAndReadChunkMetadata()" classname="messaging.MessageTest" time="0.0"/>
+  <testcase name="testWriteStringArrayByteLength()" classname="messaging.MessageTest" time="0.0"/>
+  <testcase name="testReadStringEmpty()" classname="messaging.MessageTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

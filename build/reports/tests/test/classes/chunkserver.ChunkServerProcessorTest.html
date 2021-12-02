@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ChunkServerProcessorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ChunkServerProcessorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/chunkserver.html">chunkserver</a> &gt; ChunkServerProcessorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.031s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testProcessChunkStoreRequestSavesFile()</td>
+<td class="success">0.031s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>WARN	chunkserver.Chunk               	[Test worker]	chunk variable not set. Using /tmp as default
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3 does not already exist, saving it for the first time
+INFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	We are the last recipient of the ChunkStoreRequest, no need to forward
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Sending ChunkStoreResponse SUCCESS back to localhost: ChunkStoreResponse:
+  absoluteFilePath: /test_directory/test_file2.data
+  sequence: 3
+  success: true
+
+WARN	networking.Processor            	[Test worker]	Socket is null or has been disconnected; aborting CHUNK_STORE_RESPONSE response
+INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file &quot;/Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3&quot;
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35279
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35279
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	All checksums match; chunk is valid
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 0 of size 8000 bytes: hash=ffabe7dd8cf71b40367392950340ca9c4e7d707c
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 1 of size 8000 bytes: hash=02217ffa9bf6089d892c90fcc8cd2c79eb93fdbf
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 2 of size 8000 bytes: hash=9d47732fa8be3ae8c43c3d71fd3223d1503d9bf8
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 3 of size 8000 bytes: hash=71ecc2b28d2a6b7195f45982583490b1ac12c245
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Slice 4 of size 3000 bytes: hash=2403616b097d5fa3664e48ce0a000e991e795092
+INFO	chunkserver.ChunkIntegrity      	[Test worker]	Finished reading final slice of chunk
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3 already exists, updating it
+INFO	chunkserver.Chunk               	[Test worker]	Updating chunk version from 1 to 2
+INFO	chunkserver.Chunk               	[Test worker]	Writing chunk to /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.Chunk               	[Test worker]	Successfully saved chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.Chunk               	[Test worker]	Successfully updated chunk /Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	We are the last recipient of the ChunkStoreRequest, no need to forward
+INFO	chunkserver.ChunkServerProcessor	[Test worker]	Sending ChunkStoreResponse SUCCESS back to localhost: ChunkStoreResponse:
+  absoluteFilePath: /test_directory/test_file2.data
+  sequence: 3
+  success: true
+
+WARN	networking.Processor            	[Test worker]	Socket is null or has been disconnected; aborting CHUNK_STORE_RESPONSE response
+INFO	chunkserver.Chunk               	[Test worker]	Loading chunk from file &quot;/Users/matthewernst/distribufile/src/test/resources/test_directory/test_file2.data_chunk3&quot;
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk size: 35279
+INFO	chunkserver.Chunk               	[Test worker]	Stored chunk byte array size: 35279
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at Sep 27, 2021, 8:02:19 PM</p>
+</div>
+</div>
+</body>
+</html>
